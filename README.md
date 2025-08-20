@@ -65,7 +65,7 @@
 1. **Clone the repo**:
 
 ```bash
-git clone https://github.com/SATYAPRAKASH1419/Climate.git
+git clone https://github.com/Vanshkamboj1/Weather-App
 cd Climate
 ```
 
@@ -124,14 +124,14 @@ Pull requests welcome! If you find any bugs or want to suggest new features, fee
 
 ## 🧑‍💻 Author
 
-**Satya Prakash Swain**
-🔗 [GitHub](https://github.com/SATYAPRAKASH1419)
+**Vansh Kumar**
+🔗 [GitHub]https://github.com/Vanshkamboj1
 
 ---
 
 ## 📄 License
 
-MIT License. © 2025 Satya Prakash Swain
+MIT License. © 2025 Vansh Kumar
 
 ---
 
