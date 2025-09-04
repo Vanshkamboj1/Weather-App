@@ -1,14 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/fevicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <title>Climate</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <button id="themeToggle">Dark/Light</button>
+
+  <div class="search-box">
+    <input type="text" id="cityInput" placeholder="Enter city name" spellcheck="false"/>
+    <button id="searchBtn">Search</button>
+  </div>
+
+  <!-- Row 1: Current Weather + Chart -->
+  <div class="top-row">
+    <div class="weather-card" id="weather">
+      <h2 class="city">--</h2>
+      <img src="images/clear.png" alt="Weather Icon" id="weatherIcon">
+      <p class="temp">--°C</p>
+      <p class="desc">--</p>
+      <p class="humidity">Humidity: --%</p>
+      <p class="wind">Wind: -- km/h</p>
+    </div>
+    <div class="chart-container">
+      <canvas id="tempChart"></canvas>
+    </div>
+  </div>
+
+  <!-- Row 2: Forecast -->
+  <div class="forecast-container" id="forecast"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
 </html>
